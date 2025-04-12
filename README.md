@@ -46,7 +46,7 @@ Check out the demo video below to see it in action:
 3. Get your Omdb API key:
    - Sign up at https://www.themoviedb.org/
    - Create a .env file in the root directory and add:
-     VITE_TMDB_API_KEY=your_api_key_here
+     VITE_OMDB_API_KEY=your_api_key_here
 
 
 4. Start the dev server:
