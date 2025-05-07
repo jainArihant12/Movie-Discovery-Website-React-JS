@@ -14,7 +14,7 @@ const Home = () => {
     try {
       const moviesData = await fetchPopularMovies();
       if (moviesData.length === 0) {
-        setError("No popular movies available.");
+        setError("No popular movies available.Try again");
       } else {
         setMovies(moviesData);
         setError(null); // Clear errors
@@ -86,7 +86,7 @@ const Home = () => {
 
       <div className="dark:bg-gray-950 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 ">
         {loading && <p>Loading movies...</p>}
-        {!loading && error && <p style={{ color: 'red' }}>{error}</p>}
+        {!loading && error && <p style={{ color: 'red' }} className='flex justify-center'>{error}</p>}
         {!loading && movies.length > 0 && movies.map((movi) => <MovieCards key={movi.imdbID} movie={movi} />)}
       </div>
     </>

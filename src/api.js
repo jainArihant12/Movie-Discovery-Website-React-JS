@@ -1,5 +1,5 @@
-const BASE_URL = `Enter Your Own API`
-const API_KEY = "Enter Your Own API Key"
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const fetchPopularMovies = async () => {
     try {
