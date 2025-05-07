@@ -25,13 +25,6 @@ Check out the demo video below to see it in action:
 4. Dark/Light Mode 🌗  
    Seamless dark/light theme toggle using Tailwind CSS for an enhanced viewing experience.
 
-## Demo Video
-
-Check out the demo video below to see it in action:
-
-[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
-
-(Replace YOUR_VIDEO_ID_HERE with the actual YouTube video ID)
 
 ## Tech Stack
 
@@ -53,7 +46,7 @@ Check out the demo video below to see it in action:
 3. Get your Omdb API key:
    - Sign up at https://www.themoviedb.org/
    - Create a .env file in the root directory and add:
-     VITE_TMDB_API_KEY=your_api_key_here
+     VITE_OMDB_API_KEY=your_api_key_here
 
 
 4. Start the dev server:
